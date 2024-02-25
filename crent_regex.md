@@ -104,7 +104,7 @@ These escapes allow the regex to match specific characters or character classes 
 
 ## Author
 
-Hello again! My name is Colin Rent or you can call me "crent" if you like but not preferred. I was born and raised in Bel Air, MD and currently reside in Oak Ridge, NC. I am an up and coming Web Developer hoping to make it my full time time job in the future. I hope that this page helped you better understand "Regualar Expressions" and how they come in handy when matching a URL.
+Hello again! My name is Colin Rent or you can call me "crent" if you like but not preferred. I was born and raised in Bel Air, MD and currently reside in Oak Ridge, NC. I am an up and coming Web Developer hoping to make it my full time job in the future. I hope that this page helped you better understand "Regualar Expressions" and how they come in handy when matching a URL.
 
 Contact info below:
 
