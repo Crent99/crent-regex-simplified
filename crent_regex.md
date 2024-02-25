@@ -6,7 +6,9 @@ Hello! My name is Colin Rent and I will be trying my best to explain in a thorou
 
 This snippet of code below is referenced as a "Regualar Expression" or simplified as a 'Regex':
 
-'''/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]_)_\/?$/'''
+```md
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]_)_\/?$/
+```
 
 ## Table of Contents
 
