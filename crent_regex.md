@@ -39,6 +39,18 @@ Together, these anchors `^` and `$` ensure that the entire regular expression pa
 
 ### Quantifiers
 
+In the provided regular expression snippet `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`, there are several quantifiers used:
+
+1. `?`: The question mark quantifier denotes that the preceding element (in this case, `(https?:\/\/)`) is optional. It allows for zero or one occurrence of the preceding element.
+
+2. `+`: The plus sign quantifier means "one or more" of the preceding element. It applies to `([\da-z\.-]+)`, ensuring that there must be at least one character from the set of digits, lowercase letters, dots, and hyphens.
+
+3. `{2,6}`: The curly braces with two numbers separated by a comma denote a range quantifier. In this case, `{2,6}` specifies that the preceding element (`[a-z\.]`) must occur between 2 and 6 times. This quantifier applies to `([a-z\.]{2,6})`, ensuring that the top-level domain part of the URL contains between 2 and 6 lowercase letters or dots.
+
+4. `*`: The asterisk quantifier means "zero or more" of the preceding element. It applies to `([\/\w \.-]*)`, allowing for an optional path part in the URL, containing zero or more characters including forward slashes, word characters, spaces, dots, and hyphens.
+
+Overall, these quantifiers provide flexibility in matching different components of the URL while allowing for variations in their presence or repetition.
+
 ### Grouping Constructs
 
 ### Bracket Expressions
