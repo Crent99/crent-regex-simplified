@@ -1,4 +1,4 @@
-# Title Crent Regex Simplified(Matching A URL)
+# Title: Crent Regex Simplified(Matching A URL)
 
 Hello! My name is Colin Rent and I will be trying my best to explain in a thorough description of how to filter/extract information from URLs(Uniform Resource Locator) using a "Regualr Expression". Please feel free to contact me with the information below if this helped you out!
 
