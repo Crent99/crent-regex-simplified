@@ -63,28 +63,20 @@ Capturing groups are useful for extracting specific components of a matched stri
 
 ### Bracket Expressions
 
-1. `\d`: This matches any digit from 0 to 9.
-2. `a-z`: This matches any lowercase letter from 'a' to 'z'.
-3. `\.`: This matches a literal dot character.
-4. `-`: This matches a literal hyphen character.
-5. `\w`: This matches any word character, which includes uppercase and lowercase letters, digits, and underscores.
-6. `\/`: This matches a literal forward slash character.
-7. ` `: This matches a literal space character.
+Apologies for the oversight, let's clarify.
 
-These breakout expressions are used within character classes (e.g., `[\da-z\.-]`) and character ranges (e.g., `[a-z\.]`) to define the allowable characters for different parts of the URL in the regular expression. They provide flexibility in specifying which characters are valid for matching within the pattern.
+Bracket expressions, also known as character classes or character sets, are patterns enclosed within square brackets (`[]`) in a regular expression. They are used to match any single character from a set of characters specified within the brackets. In the provided regular expression `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`, there are two bracket expressions:
 
-### Character Classes
-
-1. `[\da-z\.-]`: This character class matches a single character that can be either:
+1. `[\da-z\.-]`: This bracket expression matches a single character that can be any of the following:
 
    - `\d`: Any digit (0-9).
    - `a-z`: Any lowercase letter from 'a' to 'z'.
    - `\.`: A literal dot.
    - `-`: A literal hyphen.
 
-   This character class is used to match characters in the domain name part of the URL.
+   It is used to match characters in the domain name part of the URL.
 
-2. `[\/\w \.-]`: This character class matches a single character that can be either:
+2. `[\/\w \.-]`: This bracket expression matches a single character that can be any of the following:
 
    - `\/`: A literal forward slash.
    - `\w`: Any word character (including letters, digits, and underscores).
@@ -92,9 +84,9 @@ These breakout expressions are used within character classes (e.g., `[\da-z\.-]`
    - `\.`: A literal dot.
    - `-`: A literal hyphen.
 
-   This character class is used to match characters in the path part of the URL.
+   It is used to match characters in the path part of the URL.
 
-Character classes provide a concise way to specify a set of characters that can be matched at a particular position in the regular expression. They offer flexibility in defining patterns by allowing various characters to be matched without explicitly listing each one.
+Bracket expressions offer a compact way to specify a set of characters that can be matched at a specific position in the regular expression. They are useful for defining patterns where certain characters can vary while still adhering to a general structure.
 
 ### The OR Operator
 
