@@ -24,6 +24,7 @@ Lets summarize before we go in-depth, what does the regex snippet above explain?
 - [Bracket Expressions](#bracket-expressions)
 - [The OR Operator](#the-or-operator)
 - [Character Escapes](#character-escapes)
+- [Author](#author)
 
 ## Regex Components
 
