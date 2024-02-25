@@ -23,7 +23,6 @@ Lets summarize before we go in-depth, what does the regex snippet above explain?
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
@@ -37,8 +36,6 @@ Lets summarize before we go in-depth, what does the regex snippet above explain?
 Together, these anchors `^` and `$` ensure that the entire regular expression pattern matches the entire string, from start to finish. This means that the string must conform to the specified URL pattern without any additional characters before or after it.
 
 ### Quantifiers
-
-In the provided regular expression snippet `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`, there are several quantifiers used:
 
 1. `?`: The question mark quantifier denotes that the preceding element (in this case, `(https?:\/\/)`) is optional. It allows for zero or one occurrence of the preceding element.
 
@@ -91,9 +88,19 @@ Bracket expressions offer a compact way to specify a set of characters that can 
 
 So, in this regex, the question mark `?` serves as an OR operator, enabling the expression to match URLs with or without the 's' in 'https'.
 
-### Flags
-
 ### Character Escapes
+
+1. `\d`: This matches any digit (0-9). It's used within the character class `[\da-z\.-]` to match digits in the domain name part of the URL.
+
+2. `\.`: This matches a literal dot character. It's used both within character classes and outside, such as in `[\da-z\.-]` and `([a-z\.]{2,6})`, to match dots in the domain name and top-level domain parts of the URL.
+
+3. `\w`: This matches any word character, which includes letters, digits, and underscores. It's used within the character class `[\/\w \.-]` to match word characters in the path part of the URL.
+
+4. `\/`: This matches a literal forward slash character. It's used within the character class `[\/\w \.-]` to match forward slashes in the path part of the URL.
+
+5. `\s`: This matches any whitespace character, including spaces, tabs, and newline characters. Although not explicitly used in the given regex, it's a common escape sequence for whitespace characters.
+
+These escapes allow the regex to match specific characters or character classes with special meanings, such as digits, dots, and forward slashes, within the pattern.
 
 ## Author
 
