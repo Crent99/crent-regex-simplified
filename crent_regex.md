@@ -4,11 +4,17 @@ Hello! My name is Colin Rent and I will be trying my best to explain in a thorou
 
 ## Summary
 
-This snippet of code below is referenced as a "Regualar Expression" or simplified as a 'Regex':
+This snippet of code below is referenced as a "Regular Expression" or simplified as a 'Regex':
 
 ```md
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]_)_\/?$/
 ```
+
+It may look extremely confusing... especially to people that have never heard of a "Regular Expression" but we are going to go over every last symbol, letter and number in that snippet and hopefully afterwards you will be a master. Lets do this together!
+
+Lets summarize before we go in-depth, what does the regex snippet above explain?!
+
+- It simply makes sure that its a valid URL
 
 ## Table of Contents
 
@@ -24,6 +30,12 @@ This snippet of code below is referenced as a "Regualar Expression" or simplifie
 ## Regex Components
 
 ### Anchors
+
+1. `^`: This is the caret symbol and it denotes the start of the string. In the context of regular expressions, it asserts that the pattern following it must occur at the very beginning of the string.
+
+2. `$`: This is the dollar sign and it denotes the end of the string. Similar to the caret symbol, the dollar sign asserts that the pattern preceding it must occur at the very end of the string.
+
+Together, these anchors `^` and `$` ensure that the entire regular expression pattern matches the entire string, from start to finish. This means that the string must conform to the specified URL pattern without any additional characters before or after it.
 
 ### Quantifiers
 
