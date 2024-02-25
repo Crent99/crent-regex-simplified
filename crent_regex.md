@@ -22,7 +22,6 @@ Lets summarize before we go in-depth, what does the regex snippet above explain?
 - [Quantifiers](#quantifiers)
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
-- [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
@@ -63,8 +62,6 @@ Capturing groups are useful for extracting specific components of a matched stri
 
 ### Bracket Expressions
 
-Apologies for the oversight, let's clarify.
-
 Bracket expressions, also known as character classes or character sets, are patterns enclosed within square brackets (`[]`) in a regular expression. They are used to match any single character from a set of characters specified within the brackets. In the provided regular expression `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`, there are two bracket expressions:
 
 1. `[\da-z\.-]`: This bracket expression matches a single character that can be any of the following:
@@ -89,6 +86,10 @@ Bracket expressions, also known as character classes or character sets, are patt
 Bracket expressions offer a compact way to specify a set of characters that can be matched at a specific position in the regular expression. They are useful for defining patterns where certain characters can vary while still adhering to a general structure.
 
 ### The OR Operator
+
+`?`: The question mark in `(https?:\/\/)?` indicates that the preceding element, `s?`, can appear zero or one time. This effectively makes the 's' in 'https' optional, allowing the expression to match both 'http://' and 'https://'.
+
+So, in this regex, the question mark `?` serves as an OR operator, enabling the expression to match URLs with or without the 's' in 'https'.
 
 ### Flags
 
