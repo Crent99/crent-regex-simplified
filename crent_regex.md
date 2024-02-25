@@ -53,6 +53,14 @@ Overall, these quantifiers provide flexibility in matching different components 
 
 ### Grouping Constructs
 
+1. `(...)` - Parentheses are used for creating capturing groups. These groups allow parts of the matched text to be captured and referenced later. In this regex:
+   - `(https?:\/\/)?` creates a capturing group for the protocol part of the URL.
+   - `([\da-z\.-]+)` creates a capturing group for the domain name part of the URL.
+   - `([a-z\.]{2,6})` creates a capturing group for the top-level domain part of the URL.
+   - `([\/\w \.-]*)*` creates a capturing group for the path part of the URL.
+
+Capturing groups are useful for extracting specific components of a matched string for further processing or manipulation.
+
 ### Bracket Expressions
 
 ### Character Classes
