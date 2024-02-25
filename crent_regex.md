@@ -63,6 +63,16 @@ Capturing groups are useful for extracting specific components of a matched stri
 
 ### Bracket Expressions
 
+1. `\d`: This matches any digit from 0 to 9.
+2. `a-z`: This matches any lowercase letter from 'a' to 'z'.
+3. `\.`: This matches a literal dot character.
+4. `-`: This matches a literal hyphen character.
+5. `\w`: This matches any word character, which includes uppercase and lowercase letters, digits, and underscores.
+6. `\/`: This matches a literal forward slash character.
+7. ` `: This matches a literal space character.
+
+These breakout expressions are used within character classes (e.g., `[\da-z\.-]`) and character ranges (e.g., `[a-z\.]`) to define the allowable characters for different parts of the URL in the regular expression. They provide flexibility in specifying which characters are valid for matching within the pattern.
+
 ### Character Classes
 
 ### The OR Operator
