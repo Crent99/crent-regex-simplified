@@ -75,6 +75,27 @@ These breakout expressions are used within character classes (e.g., `[\da-z\.-]`
 
 ### Character Classes
 
+1. `[\da-z\.-]`: This character class matches a single character that can be either:
+
+   - `\d`: Any digit (0-9).
+   - `a-z`: Any lowercase letter from 'a' to 'z'.
+   - `\.`: A literal dot.
+   - `-`: A literal hyphen.
+
+   This character class is used to match characters in the domain name part of the URL.
+
+2. `[\/\w \.-]`: This character class matches a single character that can be either:
+
+   - `\/`: A literal forward slash.
+   - `\w`: Any word character (including letters, digits, and underscores).
+   - ` `: A literal space.
+   - `\.`: A literal dot.
+   - `-`: A literal hyphen.
+
+   This character class is used to match characters in the path part of the URL.
+
+Character classes provide a concise way to specify a set of characters that can be matched at a particular position in the regular expression. They offer flexibility in defining patterns by allowing various characters to be matched without explicitly listing each one.
+
 ### The OR Operator
 
 ### Flags
