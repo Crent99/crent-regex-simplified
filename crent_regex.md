@@ -1,12 +1,12 @@
 # Title Crent Regex Simplified(Matching A URL)
 
-Hello! My name is Colin Rent and I will be trying my best to explain in a thorough description of how to filter/extract information from URLs(Uniform Resource Locator). Please feel free to contact me with the information below if this helped you out!
+Hello! My name is Colin Rent and I will be trying my best to explain in a thorough description of how to filter/extract information from URLs(Uniform Resource Locator) using a "Regualr Expression". Please feel free to contact me with the information below if this helped you out!
 
 ## Summary
 
 This snippet of code below is referenced as a "Regualar Expression" or simplified as a 'Regex':
 
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]_)_\/?$/
+'''/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]_)_\/?$/'''
 
 ## Table of Contents
 
